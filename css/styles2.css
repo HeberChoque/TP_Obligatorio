@@ -3,6 +3,7 @@
 }
 
 /* Bienvenida */
+/*
 .bienvenida{
     width: 100%;
     position: relative;
@@ -28,5 +29,39 @@
 
     animation: escribir 5s steps(43), blik 0.9s ;
     overflow: hidden;
+    
+}
+*/
+
+
+
+/* Modificar */
+.bienvenida{
+    width: 100%;
+    position: relative;
+    
+    display: inline-block;
+    text-align: center;
+    color: white;
+    text-shadow: 0.3em 0.3em 0.1em  black;
 }
 
+.foto_bienvenida{
+    width: 100%;
+}
+
+.texto_bienvenida{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    
+    white-space: nowrap;
+    border-right: 100% solid;
+    width: 43ch;
+
+    animation: escribir 5s steps(43), blik 0.9s ;
+    overflow: hidden;
+    
+}
