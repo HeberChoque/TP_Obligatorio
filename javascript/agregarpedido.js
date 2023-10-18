@@ -1,9 +1,18 @@
+
 var botonesProductos = document.getElementsByTagName("button")
+
+var productos = JSON.parse(productosJSON)
 
 for (var pedido of botonesProductos) {
     pedido.addEventListener("click", agregarProducto, false)
 }
 
+
 function agregarProducto() {
-    alert("Producto agregado correctamente: "+ this.id)
+    var item
+    for (let categoria in productos) {
+        if(item = productos[categoria].find((prod) => prod.id == this.id)){
+            alert("Pedido: " + item.titulo + " - $" + item.precio)   
+        }
+    }
 }
