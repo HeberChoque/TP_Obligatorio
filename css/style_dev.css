@@ -12,6 +12,8 @@
     margin-left: 3%
 }
 
+/*     Menu     */
+
 .menu-section {
     width: 99%;
     margin: auto;
@@ -69,19 +71,66 @@
     justify-content: space-between;
 }
 
-.add-order {
+.add-item {
     margin-right: 10%;
 }
 
+/* Pantallas con ancho menor a 330px (Galaxy Fold, pantallas muy angostas, etc) */
 @media only screen and (max-width: 330px) {
-    .add-order { margin-right: 1%;}
+    .add-item { margin-right: 1%;}
     .item-footer { font-size: 2ex; font-weight: bold; }
 }
 
+/* Pantallas con ancho menor a 960px (Celulares, ventanas achicadas, etc) */
 @media only screen and (max-width: 960px) {
     .menu-item { min-width: 95%; }
 }
 
+/* Pantallas con ancho mayor de 960px (Computadoras, etc) */
 @media only screen and (min-width: 960px) {
     .menu-item { min-width: 360px; }
+}
+
+/* CSS DEL CARRITO */
+
+.order {
+    visibility: hidden;
+    background-color: chocolate;
+
+    position: fixed;
+    bottom: 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+    width: 98%;
+    margin: auto;
+}
+
+.order-information {
+    background-color:  blueviolet;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 5%;
+}
+
+
+#add-order {
+    background-color: brown;
+    margin-right: 20%;
+    margin-left: 20%;
+    width: 80%;
+    height: 40px;
+}
+
+/* Pantallas con ancho menor a 330px (Galaxy Fold, pantallas muy angostas, etc) */
+@media only screen and (max-width: 400px) {
+    .item-icon { height: 60px; width: 60px; margin-top: 20px;}
+    .add-order { margin-right: 10%; margin-left: 10%; }
 }

@@ -23,7 +23,7 @@ function aplicarFormato(producto) {
             </div>
             <div class="item-footer">
                 <span class="item-price">Precio: $`+ producto.precio +`</span>
-                <button class="add-order" type="button" id=\"`+ producto.id +`\">Agregar</button>
+                <button class="add-item" type="button" id=\"`+ producto.id +`\">Agregar</button>
             </div>
         </div>
     </div>`
