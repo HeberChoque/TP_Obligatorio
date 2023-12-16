@@ -14,10 +14,8 @@ class Carrito {
     get precioTotal() {
         /*if (!this.productos.length) {
             return 0
-        }
+        }*/
 
-        return this.productos.reduce(function(valorAnt, valorAct) { 
-            return parseInt(valorAnt.precio) + parseInt(valorAct.precio)
-         })*/
+        return this.productos.map((prod) => parseInt(prod.precio)).reduce((ant, sig) => ant + sig)
     }
 }

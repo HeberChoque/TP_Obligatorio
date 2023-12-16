@@ -49,9 +49,6 @@ function modificarBarraPedido() {
         barraPedido.style.visibility = "visible"
     }
     
-    console.log("Productos: "+carrito.cantProductos)
-    console.log("TOTAL: "+carrito.precioTotal)
-
-    //infoPedidoHTML[0].textContent = carrito.cantProductos + " productos"
-    //infoPedidoHTML[1].textContent = "$ " + carrito.precioTotal
+    infoPedidoHTML[0].textContent = carrito.cantProductos + " productos"
+    infoPedidoHTML[1].textContent = "$ " + carrito.precioTotal
 }
